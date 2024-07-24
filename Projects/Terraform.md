@@ -15,7 +15,6 @@ Resource Block : This contains the resouce type and name
 
 ##  Resources:
 
-([https://www.terraform.io/)[Terraform by HashiCorp]
-
+[Terraform by HashiCorp](https://developer.hashicorp.com/terraform)
 
 Project:
