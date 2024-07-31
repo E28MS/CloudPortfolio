@@ -34,7 +34,7 @@ You will build the Infrastructure as Code app to bring this design to the cloud.
 
 In developing the Bicep app, ensure you start small and add features incrementally. Make sure you always have a commit/branch you can fall back on with a working version of your application. You can label commits with Git Tags that are easily found in GitHub. Once your code meets the requirements mentioned above, you can use the tag 'v1.0'.
 
-# New Requirements
+# Additional Requirements
 
 The customer wants to utilize more features of the cloud. Additionally, the customer has indicated that they would like to adhere to more security best practices that are not yet implemented in the current version. Together with the consultant, the customer has outlined the following:
 
@@ -61,21 +61,8 @@ The following items must be delivered for version 1.1 of your application:
 
 Most participants use about €30-40 for the entire project. There is an absolute maximum of €50 per participant. If you exceed this, the project will be stopped immediately.
 
-## How will we work?
-The project consists of two phases. The first phase lasts 5 weeks, during which you will work on v1.0 of the application while also learning to program in Python.
-The second phase of the project will introduce a change in your architecture. This simulates a situation where a client introduces new requirements into your project and will be released later.
-
-You will work individually on your own implementation. However, you will work in teams. The following agreements apply:
-- A sprint is 2 weeks, except for the first sprint, which is 3 weeks.
-- Every last Friday, there is a sprint retrospective.
-  - In this, the team discusses the process of the past week and improvements.
-  - These improvements will be noted in the retro document. These action points are new user stories for the next sprint.
-- Every last Friday, there is a sprint demo where the teams present their progress to the product owners and explain how/why the sprint goal was or was not achieved. Note: The goal of a sprint is always to show working code. So, prefer 1 fully working feature over 3 features with bugs.
-- On the last Friday of the project, everyone presents the entire project to each other and possibly to the career buddies. Here you share your experience, your design decisions, and the architecture of your project.
-- Each team has one scrum master.
-  - The scrum master chosen in the first week carries their role for the entire project.
-  - The scrum master is the first point of contact for the team. Team members from different teams should not seek each other for help. This disrupts focus.
-  - Every workday at 16:00, there is a scrum master meeting of max 15 minutes. The scrum masters discuss the progress of the teams. Help can be requested and offered here.
+## How will I work?
+During the original 
  
   
 ## Definition of Done
@@ -101,6 +88,7 @@ The working application must successfully complete a build and a deployment. A v
 
 ### Design Documentation
 You will use the existing architecture. However, there are still details that need to be further developed. In this document, you will fill in the gaps and eventually mention the practical and technical information on GitHub. This document will contain information about your chosen (N)SG rules, as well as a visualization of what and in what order your application deploys in the cloud. In v1.1, you will also place your own diagrams here to substantiate the adjustments and improvements.
+
 ## Time Logs
 This is a file where you systematically keep track of your days. You indicate in a single sentence what you worked on that day. Point by point, you will note the obstacles you encountered and the solutions you found.
 
@@ -117,12 +105,14 @@ You can use the following template:
 ## Learnings
 
 ---
+##  Existing Architecture diagrams
 
-## Interim Presentations
-At the end of each sprint, you will create a presentation of your progress. In this, you will cover what you have done in the past sprint. At the delivery, you will show a demo of your work.
+[Existing Architecture](C:\Users\elmar\OneDrive\Cloud Engineering Course 2024\Additional Projects\Infrastructure diagrams  from Techground Project\AzureArchitecture.png)
 
-## Final Presentation
-On the last Friday of the project, everyone presents the entire project to each other. Here you share your experience, your design decisions, and the architecture of your project.
+[Architecture Diagram](C:\Users\elmar\OneDrive\Cloud Engineering Course 2024\Additional Projects\Infrastructure diagrams  from Techground Project\AzureArchitecture.png)
+
+
+
 
 ## User Stories
 The Product Owners have already had a meeting and have prepared the following epics and backlog. You will work on these epics and user stories as a team.
