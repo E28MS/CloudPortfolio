@@ -4,15 +4,15 @@
 ## Introduction
 In recent months, I have learned a lot about the cloud and applied this knowledge to relatively small assignments. This will all come together in the next big assignment where I will improve and automate an existing architecture.
 
-In the coming weeks, I will work individually on solutions for Azure.  This project was originally designed to be completed as part of a team at the end of my Cloud Engineering course but our cohort did not get the opportunity to do this.  I decided that this would enhance my portfolio and showcase my skills, so I will be adapting as I go.
+In the coming weeks, I will work on solutions for Azure.  This project was originally designed to be completed as part of a team but I decided that this would enhance my portfolio and showcase my skills, so I will be doing this project solo. 
 
 
 ### What do I expect to learn in this project?
-- Gain and apply new knowledge with little guidance
+- Gain and apply new knowledge with little to no guidance
 - Understand the project at an abstract level
 - Solve problems independently
-- Engage in discussions about technical elements
-- Suggest improvements at both code and project levels
+- Engage in discussions about technical elements with my former learning coach at Techgrounds and one of my team members that did the Cloud Engineering course with me.
+- Implement improvements at both code and project levels
 
 ## Requirements
 - Your GitHub repository
@@ -65,7 +65,7 @@ When is a version of the app finished?
 
 ## Deliverables
 The following deliverables are expected in your GitHub repository at the end of this project:
-- A working CDK / Bicep app of the MVP
+- A working Bicep app of the MVP
 - Design Documentation
 - Decision Documentation
 - Time logs
