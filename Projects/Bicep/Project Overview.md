@@ -34,6 +34,31 @@ You will build the Infrastructure as Code app to bring this design to the cloud.
 
 In developing the Bicep app, ensure you start small and add features incrementally. Make sure you always have a commit/branch you can fall back on with a working version of your application. You can label commits with Git Tags that are easily found in GitHub. Once your code meets the requirements mentioned above, you can use the tag 'v1.0'.
 
+# New Requirements
+
+The customer wants to utilize more features of the cloud. Additionally, the customer has indicated that they would like to adhere to more security best practices that are not yet implemented in the current version. Together with the consultant, the customer has outlined the following:
+
+- The web server should no longer be accessible "naked" on the internet. Ideally, the customer wants a proxy in between. Also, the server should no longer have a public IP address.
+- If a user connects to the load balancer via HTTP, the connection should automatically be upgraded to HTTPS.
+- The connection must be secured with at least TLS 1.2 or higher.
+- The web server must undergo regular health checks.
+- If the web server fails this health check, the server should be automatically restored.
+- If the web server comes under sustained load, a temporary extra server should be started. The customer believes that no more than 3 servers will ever be needed given the number of users in the past.
+
+**Note:** Because we do not want to purchase a domain name for everyone, it is difficult to establish an HTTPS connection correctly. You may use a self-signed certificate for this purpose. You will get a warning in your browser, but the connection will be encrypted.
+
+# Deliverables
+
+The following items must be delivered for version 1.1 of your application:
+
+- Updated versions of the following documents:
+  - Architecture diagram
+  - The justification for the new services used in the design document
+  - An MVP of version 1.1
+
+- Ongoing:
+
+
 Most participants use about €30-40 for the entire project. There is an absolute maximum of €50 per participant. If you exceed this, the project will be stopped immediately.
 
 ## How will we work?
