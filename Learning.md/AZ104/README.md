@@ -21,6 +21,7 @@ This folder contains my study materials and exercises for the AZ104 certificatio
 - [Microsoft Learn: AZ104](https://docs.microsoft.com/en-us/learn/certifications/exams/az-104)
 - [Exam Guide](https://docs.microsoft.com/en-us/learn/certifications/exams/az-104#skills-measured)
 - [Practice Tests](https://www.whizlabs.com/azure-administrator-certification/)
+- [Udemy AZ-104 Exam Prep Scott Duffy](https://www.udemy.com/course/70533-azure/learn/lecture/8689584?start=150#overview)
 
 ## Contact
 
