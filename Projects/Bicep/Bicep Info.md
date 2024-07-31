@@ -3,8 +3,21 @@ Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy
 
 Bicep provides concise syntax, reliable type safety, and support for code reuse. Bicep offers a first-class authoring experience for your infrastructure-as-code solutions in Azure.
 
-Declarative syntax to provision IaC.
+###Declarative syntax to provision IaC.
+
+In Azure, a declarative code approach is accomplished by using templates. Many types of templates are available to use, including:
+
+*JSON
+*Bicep
+*Ansible, by RedHat
+*Terraform, by HashiCorp
 
 ###Key Terms
+
+*Idempotence* is a term that's frequently associated with infrastructure as code. When an operation is idempotent, it means that it provides the same result each time it's run. If you choose tooling that uses idempotent operations, you can avoid configuration drift.
+
+With *imperative code*, you execute a sequence of commands, in a specific order, to reach an end configuration. This process defines what the code should accomplish, and it defines how to accomplish the task. The imperative approach is like a step-by-step instruction manual.
+
+With *declarative code*, you specify only the end configuration. The code doesn't define how to accomplish the task. The declarative approach is like the exploded view instruction manual.
 
 ###Benefits of Bicep
