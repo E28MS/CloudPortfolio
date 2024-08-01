@@ -23,8 +23,8 @@ Today I mounted Cloud Storage on my Azure subscription
 My VS Code Terminal wouldn't launch.
 
 ## Troubleshooting process/ Solutions
-I read up about common issues and went through the thoubleshooting one step at at time. 
+First, I read up about common issues in VS Code Help section and went through the thoubleshooting one step at at time.  Unresolved.  Next, I consulted ChatGPT and troubleshooted extensions by removing and re-installing 9 Azure extensions manually.  Then I deleted my Azure storage and re-created it and finally I re-installed node.js. Issue resolved! 
 
 
 ## Learnings
-Regardless of how keen I am to start building stuff, sometimes I just have to channel my inner Yoda and stay calm while carrying on.
+A reminder that regardless of how keen I am to start building stuff, sometimes I just have to channel my inner Yoda and stay calm while carrying on with troubleshooting.
