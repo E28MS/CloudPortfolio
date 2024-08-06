@@ -20,19 +20,19 @@ This document provides a detailed overview of the existing infrastructure, which
 
 ### 2.2. Components
 
-- **VLANs**
-  - VLAN 10: Office Network
-  - VLAN 20: Data Center Network
-  - VLAN 30: Guest Network
+- **VNETs**
+  - VNET 1: app-pro-vnet (what is this?? ?Office Network)
+  - VNET 2: management-pro-vnet (what's this? ???Data Center Network)
+  
 
 - **Subnets**
-  - Office Network: 192.168.10.0/24
-  - Data Center Network: 192.168.20.0/24
+  - Application subnet with NSG: 192.168.10.0/24
+  - Management Subnet with NSG: 192.168.20.0/24
   - Guest Network: 192.168.30.0/24
 
 - **Routers**
-  - Router1: Cisco ISR 4451, IP: 192.168.10.1
-  - Router2: Cisco ISR 4451, IP: 192.168.20.1
+  - Router1: IP: 192.168.10.1
+  - Router2: IP: 192.168.20.1
 
 - **Switches**
   - Switch1: Cisco Catalyst 9300, Ports: 48
@@ -42,11 +42,11 @@ This document provides a detailed overview of the existing infrastructure, which
 
 ### 3.1. Physical Servers
 
-| Server Name | Role            | OS           | IP Address       | Specifications         |
-|-------------|-----------------|--------------|------------------|------------------------|
-| Server1     | Web Server      | Windows 2016 | 192.168.10.10    | 16GB RAM, 4 vCPU, 500GB SSD |
-| Server2     | Database Server | Ubuntu 18.04 | 192.168.10.20    | 32GB RAM, 8 vCPU, 1TB SSD   |
-| Server3     | File Server     | Windows 2016 | 192.168.10.30    | 16GB RAM, 4 vCPU, 2TB HDD   |
+| Server Name | Role              | OS           | IP Address       | Specifications         |
+|-------------|-------------------|--------------|------------------|------------------------|
+| Server1     | Web Server        | Windows 2016 | 192.168.10.10    | 16GB RAM, 4 vCPU, 500GB SSD |
+| Server2     | Management Server | Ubuntu 18.04 | 192.168.10.20    | 32GB RAM, 8 vCPU, 1TB SSD   |
+| Server3     | File Server       | Windows 2016 | 192.168.10.30    | 16GB RAM, 4 vCPU, 2TB HDD   |
 
 ### 3.2. Virtual Machines
 
@@ -57,7 +57,7 @@ This document provides a detailed overview of the existing infrastructure, which
 
 ## 4. Storage
 
-### 4.1. Storage Arrays
+### 4.1. Storage Account
 
 | Array Name  | Type           | Capacity    | Used Capacity | Free Capacity | Location             |
 |-------------|----------------|-------------|---------------|---------------|----------------------|
