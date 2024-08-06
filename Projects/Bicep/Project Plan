@@ -1,1 +1,5 @@
 Project Plan
+
+1.  Document existing infrastructure, including assumptions
+2.  Create Bicep templates to migrate existing infrastructure to Azure
+3.  Launch templates
