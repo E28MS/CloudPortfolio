@@ -5,6 +5,8 @@ This document provides detailed information about the design and architecture of
 and diagrams to visualize the architecture and improvements in version 1.1.
 
 ## Existing Architecture
+
+
 Describe the existing architecture of your application. Include an overview of the components and how they interact.
 
 ## Network Security Group (NSG) Rules
