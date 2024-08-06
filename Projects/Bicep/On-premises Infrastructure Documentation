@@ -7,6 +7,165 @@ and diagrams to visualize the architecture and improvements in version 1.1.
 ## Existing Architecture
 Describe the existing architecture of your application. Include an overview of the components and how they interact.
 
+# Existing Infrastructure Documentation
+
+## 1. Overview
+
+This document provides a detailed overview of the existing infrastructure, which will be used as a reference for creating Bicep templates for cloud migration.
+
+## 2. Network Topology
+
+### 2.1. Diagram
+![Diagram]()
+
+### 2.2. Components
+
+- **VLANs**
+  - VLAN 10: Office Network
+  - VLAN 20: Data Center Network
+  - VLAN 30: Guest Network
+
+- **Subnets**
+  - Office Network: 192.168.10.0/24
+  - Data Center Network: 192.168.20.0/24
+  - Guest Network: 192.168.30.0/24
+
+- **Routers**
+  - Router1: Cisco ISR 4451, IP: 192.168.10.1
+  - Router2: Cisco ISR 4451, IP: 192.168.20.1
+
+- **Switches**
+  - Switch1: Cisco Catalyst 9300, Ports: 48
+  - Switch2: Cisco Catalyst 9300, Ports: 48
+
+## 3. Servers
+
+### 3.1. Physical Servers
+
+| Server Name | Role            | OS           | IP Address       | Specifications         |
+|-------------|-----------------|--------------|------------------|------------------------|
+| Server1     | Web Server      | Windows 2016 | 192.168.10.10    | 16GB RAM, 4 vCPU, 500GB SSD |
+| Server2     | Database Server | Ubuntu 18.04 | 192.168.10.20    | 32GB RAM, 8 vCPU, 1TB SSD   |
+| Server3     | File Server     | Windows 2016 | 192.168.10.30    | 16GB RAM, 4 vCPU, 2TB HDD   |
+
+### 3.2. Virtual Machines
+
+| VM Name     | Role            | Host Server | OS           | IP Address       | Specifications         |
+|-------------|-----------------|-------------|--------------|------------------|------------------------|
+| VM1         | Application     | Server1     | CentOS 7     | 192.168.20.10    | 8GB RAM, 2 vCPU, 100GB SSD |
+| VM2         | Test Database   | Server2     | Ubuntu 18.04 | 192.168.20.20    | 16GB RAM, 4 vCPU, 200GB SSD |
+
+## 4. Storage
+
+### 4.1. Storage Arrays
+
+| Array Name  | Type           | Capacity    | Used Capacity | Free Capacity | Location             |
+|-------------|----------------|-------------|---------------|---------------|----------------------|
+| SAN1        | SAN            | 10TB        | 7TB           | 3TB           | Data Center Rack A1  |
+| NAS1        | NAS            | 5TB         | 2TB           | 3TB           | Data Center Rack B2  |
+
+### 4.2. Backup Solutions
+
+| Backup Solution | Type           | Capacity    | Location             |
+|-----------------|----------------|-------------|----------------------|
+| Backup1         | Tape Library   | 50TB        | Data Center Rack C1  |
+| Backup2         | Cloud Storage  | Unlimited   | AWS S3               |
+
+## 5. Security
+
+### 5.1. Firewalls
+
+| Firewall Name | Type              | IP Address       | Rules                      |
+|---------------|-------------------|------------------|----------------------------|
+| Firewall1     | Cisco ASA 5516-X  | 192.168.10.254   | Allow: 80, 443, Deny: All  |
+| Firewall2     | FortiGate 100E    | 192.168.20.254   | Allow: 22, 3306, Deny: All |
+
+### 5.2. VPN
+
+| VPN Name      | Type              | Endpoint IP      | Users            | Protocols      |
+|---------------|-------------------|------------------|------------------|----------------|
+| VPN1          | Site-to-Site      | 203.0.113.10     | Office Network   | IPsec          |
+| VPN2          | Remote Access     | 203.0.113.20     | Remote Workers   | SSL/TLS        |
+
+## 6. Applications
+
+### 6.1. Web Applications
+
+| Application Name | URL                 | Server        | Database       | Dependencies       |
+|------------------|---------------------|---------------|----------------|--------------------|
+| App1             | http://app1.company.com | Server1      | DB1 (Server2)  | .NET, IIS          |
+| App2             | http://app2.company.com | VM1          | DB2 (VM2)      | Node.js, Nginx     |
+
+### 6.2. Databases
+
+| Database Name | Type          | Server        | Version       | Size           |
+|---------------|---------------|---------------|---------------|----------------|
+| DB1           | SQL Server    | Server2       | 2016          | 200GB          |
+| DB2           | MySQL         | VM2           | 5.7           | 100GB          |
+
+## 7. Monitoring and Logging
+
+### 7.1. Monitoring Tools
+
+| Tool Name      | Type            | Monitored Components       | Alerts             |
+|----------------|-----------------|----------------------------|--------------------|
+| Nagios         | Infrastructure  | Servers, Network Devices   | Email, SMS         |
+| Prometheus     | Application     | Web Applications, Databases| Email, Slack       |
+
+### 7.2. Logging Solutions
+
+| Solution Name  | Type            | Components Logged          | Retention Period   |
+|----------------|-----------------|----------------------------|--------------------|
+| ELK Stack      | Centralized     | Application Logs, System Logs | 30 days            |
+| Splunk         | SIEM            | Security Logs               | 90 days            |
+
+## 8. Dependencies and Integrations
+
+### 8.1. Internal
+
+- **Active Directory**: Used for user authentication and authorization.
+- **DNS**: Internal DNS server for name resolution.
+
+### 8.2. External
+
+- **Third-party APIs**: Payment gateway, Email service.
+- **Cloud Services**: AWS S3 for backup storage.
+
+## 9. Notes and Observations
+
+- Ensure all IP addresses and hostnames are accurate before migration.
+- Verify all firewall rules and VPN configurations.
+- Double-check storage capacities and backup solutions.
+- Confirm application dependencies and database versions.
+
+---
+
+*Prepared by:* [Your Name]  
+*Date:* 2024-08-06
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Network Security Group (NSG) Rules
 Provide detailed information about the NSG rules you have chosen. Include explanations for each rule and why it was selected.
 
