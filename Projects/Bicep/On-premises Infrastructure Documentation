@@ -1,0 +1,67 @@
+# Design Documentation
+
+## Introduction
+This document provides detailed information about the design and architecture of the application. It includes details on Network Security Group (NSG) rules, the deployment process, 
+and diagrams to visualize the architecture and improvements in version 1.1.
+
+## Existing Architecture
+Describe the existing architecture of your application. Include an overview of the components and how they interact.
+
+## Network Security Group (NSG) Rules
+Provide detailed information about the NSG rules you have chosen. Include explanations for each rule and why it was selected.
+
+### Example NSG Rule
+| Rule Name       | Priority | Source      | Source Port | Destination | Destination Port | Protocol | Action |
+|-----------------|----------|-------------|-------------|-------------|------------------|----------|--------|
+| AllowWebTraffic | 100      | Any         | Any         | Any         | 80, 443          | TCP      | Allow  |
+| DenyAllInbound  | 200      | Any         | Any         | Any         | Any              | Any      | Deny   |
+
+## Deployment Process
+Detail the steps and order in which your application is deployed in the cloud. This section should cover the practical and technical aspects of the deployment.
+
+### Deployment Steps
+1. **Provision Infrastructure**:
+   - Create virtual networks and subnets.
+   - Set up NSG and associate it with the subnets.
+
+2. **Deploy Application Components**:
+   - Deploy web servers.
+   - Deploy application servers.
+   - Deploy database servers.
+
+3. **Configure Load Balancer**:
+   - Set up load balancer with appropriate rules.
+
+4. **Apply NSG Rules**:
+   - Apply NSG rules to control traffic.
+
+5. **Verify Deployment**:
+   - Perform health checks and verify that all components are working as expected.
+
+## Visualizations
+Include diagrams that illustrate the architecture and the deployment process. For version 1.1, provide diagrams to substantiate the adjustments and improvements.
+
+### Architecture Diagram
+![Architecture Diagram](path/to/your/architecture_diagram.png)
+
+### Deployment Flow Diagram
+![Deployment Flow](path/to/your/deployment_flow_diagram.png)
+
+## Adjustments and Improvements in v1.1
+Detail the adjustments and improvements made in version 1.1. Include reasons for these changes and how they enhance the application.
+
+### Adjustments
+- **Improved Security**:
+  - Description of security improvements.
+  - Diagrams illustrating the changes.
+
+- **Optimized Performance**:
+  - Description of performance optimizations.
+  - Diagrams illustrating the changes.
+
+## Conclusion
+Summarize the key points of the design documentation. Reiterate the importance of the NSG rules, the deployment process, and the adjustments made in version 1.1.
+
+---
+
+*This document is part of the project documentation and is intended to provide clear and detailed information about the design and architecture of the application.*
