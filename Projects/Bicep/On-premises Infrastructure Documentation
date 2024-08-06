@@ -5,8 +5,6 @@ This document provides detailed information about the design and architecture of
 and diagrams to visualize the architecture and improvements in version 1.1.
 
 ## Existing Architecture
-
-
 Describe the existing architecture of your application. Include an overview of the components and how they interact.
 
 ## Network Security Group (NSG) Rules
@@ -44,7 +42,8 @@ Detail the steps and order in which your application is deployed in the cloud. T
 Include diagrams that illustrate the architecture and the deployment process. For version 1.1, provide diagrams to substantiate the adjustments and improvements.
 
 ### Architecture Diagram
-![Architecture Diagram](path/to/your/architecture_diagram.png)
+![Architecture Diagram](https://github.com/E28MS/CloudPortfolio/blob/main/Projects/Bicep/ExistingArchitechture.png)
+
 
 ### Deployment Flow Diagram
 ![Deployment Flow](path/to/your/deployment_flow_diagram.png)
