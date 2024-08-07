@@ -12,3 +12,18 @@ I haven't looked at the previous students portfolio's yet, I will do so once I'v
 
 ## Learnings
 I feel I will learn more by doing things myself, even if I make mistakes.  
+
+
+# Log [07/08/2024]
+
+## Day Report (1 liner)
+Today I continued working on my document template for my existing infrastructure and continued the Learn MS Bicep module.
+
+## Difficulties
+
+
+## Solutions
+
+
+## Learnings
+ 
