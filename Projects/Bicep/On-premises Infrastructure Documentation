@@ -28,15 +28,11 @@ This document provides a detailed overview of the existing infrastructure, which
 - **Subnets**
   - Application subnet with NSG: 192.168.10.0/24
   - Management Subnet with NSG: 192.168.20.0/24
-  - Guest Network: 192.168.30.0/24
+  
 
 - **Routers**
   - Router1: IP: 192.168.10.1
   - Router2: IP: 192.168.20.1
-
-- **Switches**
-  - Switch1: Cisco Catalyst 9300, Ports: 48
-  - Switch2: Cisco Catalyst 9300, Ports: 48
 
 ## 3. Servers
 
@@ -48,14 +44,7 @@ This document provides a detailed overview of the existing infrastructure, which
 | Server2     | Management Server | Ubuntu 18.04 | 192.168.10.20    | 32GB RAM, 8 vCPU, 1TB SSD   |
 | Server3     | File Server       | Windows 2016 | 192.168.10.30    | 16GB RAM, 4 vCPU, 2TB HDD   |
 
-### 3.2. Virtual Machines
-
-| VM Name     | Role            | Host Server | OS           | IP Address       | Specifications         |
-|-------------|-----------------|-------------|--------------|------------------|------------------------|
-| VM1         | Application     | Server1     | CentOS 7     | 192.168.20.10    | 8GB RAM, 2 vCPU, 100GB SSD |
-| VM2         | Test Database   | Server2     | Ubuntu 18.04 | 192.168.20.20    | 16GB RAM, 4 vCPU, 200GB SSD |
-
-## 4. Storage
+mm## 4. Storage
 
 ### 4.1. Storage Account
 
