@@ -1,5 +1,11 @@
-Project Plan
+### Project Plan
 
-1.  Document existing infrastructure, including assumptions
-2.  Create Bicep templates to migrate existing infrastructure to Azure
-3.  Launch templates
+These are the steps I will follow to complete this project.  This is a work in progress as I learn while doing the project and as I gain understanding of the requirements of the deliverables.
+
+1.  Adjust project documentation from the original to be a suitable format for my version for a single person  
+2.  Read and understand requirements for deliverables and break this down into week by week sections
+3.  Read Learn Microsoft Documentation on Bicep
+4.  Creat a document for existing infrastructure, including assumptions
+5.  Create a Design Document, including reasons for making decisions
+6.  Create Bicep templates to migrate existing infrastructure to Azure
+7.  Launch templates
