@@ -4,7 +4,7 @@
 ## Introduction
 In recent months, I have learned a lot about the cloud and applied this knowledge to relatively small assignments. This will all come together in the next big assignment where I will improve and automate an existing architecture.
 
-In the coming weeks, I will work on solutions for Azure.  This project was originally designed to be completed as part of a team but I decided that this would enhance my portfolio and showcase my skills, so I will be doing this project solo. 
+In the coming weeks, I will work on solutions for Azure.  This project was originally designed to be completed as part of a team but not included in our Techgrounds Cloud Engineering course.  I decided that this would enhance my portfolio and showcase my skills, so I will be doing this project solo. 
 
 
 ### What do I expect to learn in this project?
@@ -57,8 +57,7 @@ The following items must be delivered for version 1.1 of your application:
   - An MVP of version 1.1
 
 - Ongoing:
-
-
+- 
 Most participants use about €30-40 for the entire project. There is an absolute maximum of €50 per participant. If you exceed this, the project will be stopped immediately.
 
 ## How will I work?
@@ -76,35 +75,21 @@ When is a version of the app finished?
 - v1.1: When it meets all the new requirements.
 
 ## Deliverables
-The following deliverables are expected in your GitHub repository at the end of this project:
+I will produce the following deliverables in my GitHub repository at the end of this project:
 - A working Bicep app of the MVP
 - Design Documentation
 - Decision Documentation
 - Time logs
-- Final presentation
 
 ### Working application of the MVP
-The working application must successfully complete a build and a deployment. A version of your MVP must be easy to identify. This can be done with a tag or a release. Additionally, your repository should contain documentation on how to use the application. This includes how to invoke the application, the required arguments, and the necessary permissions in AWS or Azure to deploy.
+The working application must successfully complete a build and a deployment. A version of your MVP must be easy to identify. This can be done with a tag or a release. Additionally, your repository should contain documentation on how to use the application. This includes how to invoke the application, the required arguments, and the necessary permissions in Azure to deploy.
 
 ### Design Documentation
 You will use the existing architecture. However, there are still details that need to be further developed. In this document, you will fill in the gaps and eventually mention the practical and technical information on GitHub. This document will contain information about your chosen (N)SG rules, as well as a visualization of what and in what order your application deploys in the cloud. In v1.1, you will also place your own diagrams here to substantiate the adjustments and improvements.
 
 ## Time Logs
-This is a file where you systematically keep track of your days. You indicate in a single sentence what you worked on that day. Point by point, you will note the obstacles you encountered and the solutions you found.
+This is a file where I systematically keep track of my days. I will indicate in a single sentence what I worked on that day. Point by point, I will note the obstacles I encountered and the solutions I found. 
 
-You can use the following template:
-
-# Log [date]
-
-## Daily Summary (1 sentence)
-
-## Obstacles
-
-## Solutions
-
-## Learnings
-
----
 ##  Existing Architecture diagrams
 
 [Existing Architecture](C:\Users\elmar\OneDrive\Cloud Engineering Course 2024\Additional Projects\Infrastructure diagrams  from Techground Project\AzureArchitecture.png)
