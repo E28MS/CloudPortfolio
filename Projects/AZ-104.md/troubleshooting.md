@@ -1,5 +1,9 @@
+Step 2:
+
+I researched to see if SharePoint was the best trigger to use for my use case and after reading the information below, decided to replace the SharePoint trigger with a Googlemail trigger instead. I learnt that there are multiple ways to trigger the LogicApp:
+
 Alternatives to SharePoint for Triggering a Logic App
-Microsoft Logic Apps offers a wide range of connectors and triggers that can be used in place of SharePoint. Here are some alternatives you can consider:
+Microsoft Logic Apps offers a wide range of connectors and triggers that can be used in place of SharePoint:
 
 Email Triggers:
 
