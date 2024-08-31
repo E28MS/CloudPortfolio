@@ -28,3 +28,7 @@ Database or Spreadsheet Updates:
 
 Google Sheets: You can set up a trigger based on changes or additions to a Google Sheet.
 Excel Online (Business): If you have a Microsoft 365 subscription, you can use Excel Online, where new rows added to a spreadsheet can trigger your workflow.
+
+### Unable to connect Outlook email account as it requires a work or school account.  
+
+Once I've researched the problem to understand it in more details, I decided 
