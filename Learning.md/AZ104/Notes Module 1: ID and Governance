@@ -1,3 +1,7 @@
+###  Resources:
+
+(Learn Microsoft Logic Apps)[https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-create-api-app]
+
 During Project 1: Onboarder, I am building a logic app but keep running into difficulties when I try to connect the LogicApp to Entra ID in order to add the action of creating a new user.  Here is one of the methods I tried with information about endpoints:
 
 Understanding which endpoint to use when connecting to Entra ID (Azure Active Directory) from your Logic App in Azure can be a bit confusing at first, but I’ll break it down step-by-step.
