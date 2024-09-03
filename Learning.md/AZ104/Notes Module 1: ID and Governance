@@ -1,1 +1,124 @@
+During Project 1: Onboarder, I am building a logic app but keep running into difficulties when I try to connect the LogicApp to Entra ID in order to add the action of creating a new user.  Here is one of the methods I tried with information about endpoints:
 
+Understanding which endpoint to use when connecting to Entra ID (Azure Active Directory) from your Logic App in Azure can be a bit confusing at first, but I’ll break it down step-by-step.
+
+### **1. What is an API Endpoint?**
+
+An API endpoint is simply a specific URL where an API (in this case, the Microsoft Graph API) can be accessed to perform a particular action. Each endpoint is associated with a different resource or operation (e.g., creating a user, listing users, updating group information).
+
+### **2. What is Microsoft Graph API?**
+
+Microsoft Graph is the API used to interact with various Microsoft services, including Entra ID (Azure AD). It provides endpoints for managing users, groups, devices, and other directory resources.
+
+### **3. Common Microsoft Graph Endpoints for Azure AD**
+
+Here are some common Microsoft Graph API endpoints that you might use with Entra ID:
+
+- **Get User Information**:  
+  Retrieve details about a specific user.
+  - **Endpoint**: `https://graph.microsoft.com/v1.0/users/{userId}`
+  - **Method**: GET
+
+- **Create a New User**:  
+  Create a new user in your Azure AD directory.
+  - **Endpoint**: `https://graph.microsoft.com/v1.0/users`
+  - **Method**: POST
+
+- **List Users**:  
+  Retrieve a list of all users in the directory.
+  - **Endpoint**: `https://graph.microsoft.com/v1.0/users`
+  - **Method**: GET
+
+- **Update a User**:  
+  Update an existing user's details.
+  - **Endpoint**: `https://graph.microsoft.com/v1.0/users/{userId}`
+  - **Method**: PATCH
+
+- **Delete a User**:  
+  Remove a user from your Azure AD directory.
+  - **Endpoint**: `https://graph.microsoft.com/v1.0/users/{userId}`
+  - **Method**: DELETE
+
+### **4. How to Choose the Right Endpoint**
+
+The endpoint you use depends on the operation you want to perform:
+
+- **If you want to create a new user** in Entra ID, you would use the POST method with the endpoint:  
+  `https://graph.microsoft.com/v1.0/users`
+  
+- **If you want to get information about an existing user**, you would use the GET method with the endpoint:  
+  `https://graph.microsoft.com/v1.0/users/{userId}`  
+  (Replace `{userId}` with the actual user ID or UPN [User Principal Name, like an email address] of the user you want to retrieve.)
+
+### **5. Using the Endpoint in Logic App**
+
+Let’s go through an example where you want to **create a new user** in Azure AD from your Logic App.
+
+#### **Step 1: Get an Access Token**
+First, you need to obtain an OAuth 2.0 token so that your Logic App can authenticate against Microsoft Graph API.
+
+1. **Add an HTTP Action** in your Logic App Designer:
+   - **Method**: POST
+   - **URI**:  
+     ```
+     https://login.microsoftonline.com/{tenantId}/oauth2/v2.0/token
+     ```
+     Replace `{tenantId}` with your Azure AD Tenant ID.
+
+   - **Headers**: 
+     - `Content-Type`: `application/x-www-form-urlencoded`
+
+   - **Body**:
+     ```
+     grant_type=client_credentials
+     &client_id={yourClientId}
+     &client_secret={yourClientSecret}
+     &scope=https://graph.microsoft.com/.default
+     ```
+     Replace `{yourClientId}` with your Application (client) ID, and `{yourClientSecret}` with your client secret.
+
+#### **Step 2: Parse the Token**
+After the first HTTP action retrieves the token, add another step to parse the token from the response.
+
+#### **Step 3: Use the Token to Create a User**
+Now, use another HTTP action to make a POST request to the Graph API to create a new user.
+
+1. **Add a New HTTP Action**:
+   - **Method**: POST
+   - **URI**:  
+     ```
+     https://graph.microsoft.com/v1.0/users
+     ```
+
+   - **Headers**:
+     - `Authorization`: `Bearer {access_token}`
+       (Replace `{access_token}` with the token you parsed in the previous step.)
+     - `Content-Type`: `application/json`
+
+   - **Body**:
+     ```json
+     {
+       "accountEnabled": true,
+       "displayName": "John Doe",
+       "mailNickname": "johndoe",
+       "userPrincipalName": "johndoe@yourdomain.com",
+       "passwordProfile": {
+         "forceChangePasswordNextSignIn": true,
+         "password": "YourPassword123!"
+       }
+     }
+     ```
+     Adjust the user details according to your requirements.
+
+### **6. Testing the Logic App**
+
+1. **Save and Run the Logic App**: Trigger the Logic App to test the flow.
+2. **Check Results**: If successful, a new user should be created in your Azure AD directory.
+
+### **Summary**
+
+- **Endpoints**: They define what action you're performing (e.g., creating a user, getting user details).
+- **Choosing the Endpoint**: Depends on what you want to do (e.g., `POST /users` for creating a user).
+- **Using in Logic App**: You'll use these endpoints in HTTP actions in your Logic App.
+
+Understanding how to use these endpoints allows you to automate tasks in Azure AD using Logic Apps effectively.
