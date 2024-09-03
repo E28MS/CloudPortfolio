@@ -1,3 +1,8 @@
+What I learned on Project 1: Create automatic Onboarder
+
+- GMail triggers are not compatible with http actions due to privacy issues, see [Microsoft Learn Connectors](https://learn.microsoft.com/en-us/azure/connectors/connectors-google-data-security-privacy-policy)  for more details.
+
+
 ###  Resources:
 
 (Learn Microsoft Logic Apps)[https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-create-api-app]
