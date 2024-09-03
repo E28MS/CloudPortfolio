@@ -1,5 +1,7 @@
 What I learned on Project 1: Create automatic Onboarder
 
+- You need to register your logic app in Entra ID in order for the logic app to be able to communicate safely with Entra ID 
+- There are issues with building things if you don't have a work or school email that I have to find workarounds for
 - GMail triggers are not compatible with http actions due to privacy issues, see [Microsoft Learn Connectors](https://learn.microsoft.com/en-us/azure/connectors/connectors-google-data-security-privacy-policy)  for more details.
 
 
