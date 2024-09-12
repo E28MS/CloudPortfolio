@@ -37,3 +37,15 @@ Streamline and automate the process of onboarding a new employee into Entra ID a
 ###  Resources
 
 [Learn Microsoft Process Data with Logic Apps](https://learn.microsoft.com/en-us/training/modules/route-and-process-data-logic-apps/1-introduction)
+
+###  Difficulties and Troubleshooting
+
+I had persistant difficulties getting past Step 2 as I couldn't get a trigger  to connect succesfully with Entra ID to create a new user.  I kept getting an error message that stated that I needed a work or school account to make the connection.
+
+Steps I took to resolve this:
+*  I tried to use different triggers.(HTTP, Gmail, Outlook)
+
+*  I registered the Logic App in Entra ID, granting User.Read.Write.All and Admin Priveleges (see Includes for details)
+
+*  
+
