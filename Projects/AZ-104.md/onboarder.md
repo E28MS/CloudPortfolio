@@ -1,3 +1,5 @@
+###  Project Outline
+
 ## Onboard Automator (AZ-104 Module 1: Manage Azure identities and governance)
 Streamline and automate the process of onboarding a new employee into Entra ID and assigning necessary Azure resources.
 
@@ -29,3 +31,9 @@ Streamline and automate the process of onboarding a new employee into Entra ID a
    
    7. **Monitoring and Review**:
         - Monitor and review the onboarding process through Logic Apps runs history and Azure AD logs to ensure smooth operations.
+     
+
+
+###  Resources
+
+[Learn Microsoft Process Data with Logic Apps](https://learn.microsoft.com/en-us/training/modules/route-and-process-data-logic-apps/1-introduction)
