@@ -32,3 +32,5 @@ Excel Online (Business): If you have a Microsoft 365 subscription, you can use E
 ### Unable to connect Outlook email account as it requires a work or school account.  
 
 Once I've researched the problem to understand it in more details, I decided to use a Gmail trigger but this only got me to the end of step 2.  When I tried adding the Create User action through the Entra ID Connector in the LogicApp, I got the same error message stating that I couldn't log in with a personal account when I tried to create a connection between 
+
+I resolved this by changing my trigger to an HTTP Request Received.
