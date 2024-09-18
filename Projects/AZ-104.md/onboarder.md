@@ -47,5 +47,7 @@ Steps I took to resolve this:
 
 *  I registered the Logic App in Entra ID, granting User.Read.Write.All and Admin Priveleges (see Includes for details)
 
-*  
+
+Solutions:
+After scrutinizing my app from start to finish, I realised that I was using an HTTP action instead of an HTTP Trigger as the first building block of my logic app.  
 
