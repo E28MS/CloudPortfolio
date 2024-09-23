@@ -41,4 +41,6 @@ Bicep provides many improvements over JSON for template authoring, including:
 
 [Learn Microsoft Introduction to IaC](https://learn.microsoft.com/en-us/training/modules/introduction-to-infrastructure-as-code-using-bicep/2-what-infrastructure-code)
 
+[Bicep Playground containing Templates](https://azure.github.io/bicep/)
+
 
