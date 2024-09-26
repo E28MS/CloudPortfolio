@@ -51,6 +51,14 @@ Steps I took to resolve this:
 Solutions:
 After scrutinizing my app from start to finish, I realised that I was using an HTTP action instead of an HTTP Trigger as the first building block of my logic app.  
 
+
+After adding the next HTTP Action (1), I get getting a BadRequest error.  This seemed to have something to do with the way I structured the user information I entered in Postman and how that then gets interpreted by by the LogicApp.  
+
+Solutions:
+Firstly, I tried to clarify in my mind what the error was.  Using the JSON schemas from Postman and the LogicApp to compare was very useful here.
+
+
+
 ## Outcomes
 
 ##  Summary of Steps:
