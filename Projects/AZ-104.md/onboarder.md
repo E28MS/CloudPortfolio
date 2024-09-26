@@ -40,6 +40,7 @@ Streamline and automate the process of onboarding a new employee into Entra ID a
 
 ###  Difficulties and Troubleshooting
 
+##  Getting stuck on step 2:
 I had persistant difficulties getting past Step 2 as I couldn't get a trigger  to connect succesfully with Entra ID to create a new user.  I kept getting an error message that stated that I needed a work or school account to make the connection.
 
 Steps I took to resolve this:
@@ -51,8 +52,29 @@ Steps I took to resolve this:
 Solutions:
 After scrutinizing my app from start to finish, I realised that I was using an HTTP action instead of an HTTP Trigger as the first building block of my logic app.  
 
-
+##  BedRequest Error:
 After adding the next HTTP Action (1), I get getting a BadRequest error.  This seemed to have something to do with the way I structured the user information I entered in Postman and how that then gets interpreted by by the LogicApp.  
+
+Here is the inputs from the HTTP 1 Action:
+
+{
+    "uri": "https://graph.microsoft.com/v1.0/users",
+    "method": "POST",
+    "headers": {
+        "Authorization": "*sanitized*",
+        "Content-Type": "application/json"
+    },
+    "body": {
+        "accountEnabled": true,
+        "displayName": "EsmeraldaWeatherwax",
+        "mailNickname": "EsmeraldaWeatherwax",
+        "userPrincipalName": "Esmeralda.Weatherwax@example.com",
+        "passwordProfile": {
+            "forceChangePasswordNextSignIn": true,
+            "password": "DefaultPassword123!"
+        }
+    }
+}
 
 Solutions:
 Firstly, I tried to clarify in my mind what the error was.  Using the JSON schemas from Postman and the LogicApp to compare was very useful here.
