@@ -51,3 +51,35 @@ Steps I took to resolve this:
 Solutions:
 After scrutinizing my app from start to finish, I realised that I was using an HTTP action instead of an HTTP Trigger as the first building block of my logic app.  
 
+## Outcomes
+
+##  Summary of Steps:
+###  HTTP Trigger (User data from Postman).
+
+Here I set up the HTTP Trigger and added the details of the user I wanted to create in Postman:
+
+![image](https://github.com/user-attachments/assets/f8a29f6d-4735-4da4-bbbe-47c2fec3e17a)
+
+
+
+
+###  HTTP Action (Get access token from Azure AD).
+
+This first HTTP action is used to connect to Entra ID and get the access token.
+
+![image](https://github.com/user-attachments/assets/92461d63-f3e0-4085-bb52-1306fd8cb017)
+
+
+###  Parse JSON (Extract access token).
+
+The Parse JSON is used to get the access token from the body of the previous HTTP Acton 
+
+![image](https://github.com/user-attachments/assets/cee072cb-9397-44d2-b1e7-5b9b02e4ec2f)
+
+
+
+HTTP Action (Use Microsoft Graph API to create the user).
+
+###  Here I set up the next HTTP action , using Microsoft Graph API to create the new user:
+
+![image](https://github.com/user-attachments/assets/7fc528d5-b8c0-4a85-b419-5f7efd0948ec)
