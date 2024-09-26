@@ -86,7 +86,10 @@ I found that I didn't previously assign anything apart from User.ReadWrite.All:
 
 ![image](https://github.com/user-attachments/assets/d57f7984-8038-4744-9323-1a0f280842d4)
 
-But searching for Group.ReadWrite.All and Directory.ReadWrite.All didn't bring these options up.  So back to the drawing board.
+When I added the permsissions above, and included  Group.Create, I got the following information in the Status of the API Permissions:
+
+![image](https://github.com/user-attachments/assets/e9b4dc2a-dd58-4f57-81cf-3efc1ce853a5)
+
 
 
 ## Outcomes
