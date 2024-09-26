@@ -79,6 +79,14 @@ Here is the inputs from the HTTP 1 Action:
 Solutions:
 Firstly, I tried to clarify in my mind what the error was.  Using the JSON schemas from Postman and the LogicApp to compare was very useful here.
 
+##  Forbidden Error
+The BadRequest error sooned deteriorated into a Forbidden error, so I went back through to check the permissions provided earlier for my LogicApp in Entra ID.  Specifically, I wanted to check if I granted Group.ReadWrite.All and Directory.ReadWrite.All, as I know that I granted User.ReadWrite.All.
+
+I found that I didn't previously assign anything apart from User.ReadWrite.All:
+
+![image](https://github.com/user-attachments/assets/d57f7984-8038-4744-9323-1a0f280842d4)
+
+But searching for Group.ReadWrite.All and Directory.ReadWrite.All didn't bring these options up.  So back to the drawing board.
 
 
 ## Outcomes
