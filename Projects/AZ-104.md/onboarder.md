@@ -38,6 +38,8 @@ Streamline and automate the process of onboarding a new employee into Entra ID a
 
 [Learn Microsoft Process Data with Logic Apps](https://learn.microsoft.com/en-us/training/modules/route-and-process-data-logic-apps/1-introduction)
 
+[Workflow Expression Functions in Azure Logic Apps and Power Automate](https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference)
+
 ###  Difficulties and Troubleshooting
 
 ##  Getting stuck on step 2:
