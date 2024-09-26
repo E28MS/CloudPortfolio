@@ -90,6 +90,9 @@ When I added the permsissions above, and included  Group.Create, I got the follo
 
 ![image](https://github.com/user-attachments/assets/e9b4dc2a-dd58-4f57-81cf-3efc1ce853a5)
 
+Which I resolved by Granting Admin Permissions:
+
+![image](https://github.com/user-attachments/assets/d354d82f-0bd3-493e-be00-22b62d3c3432)
 
 
 ## Outcomes
