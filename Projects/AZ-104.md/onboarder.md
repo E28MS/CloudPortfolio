@@ -136,7 +136,7 @@ Here I set up the HTTP Trigger and added the details of the user I wanted to cre
 
 ![image](https://github.com/user-attachments/assets/f8a29f6d-4735-4da4-bbbe-47c2fec3e17a)
 
-
+The payload from Postman then populates the body of the HTTP Trigger when an HTTP request is received.
 
 
 ###  HTTP Action (Get access token from Azure AD).
