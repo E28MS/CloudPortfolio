@@ -136,7 +136,40 @@ Here I set up the HTTP Trigger and added the details of the user I wanted to cre
 
 ![image](https://github.com/user-attachments/assets/f8a29f6d-4735-4da4-bbbe-47c2fec3e17a)
 
-The payload from Postman then populates the body of the HTTP Trigger when an HTTP request is received.
+The payload from Postman then populates the body of the HTTP Trigger when an HTTP request is received.  So I copied the URL from the HTTP Trigger and used this for Postman to send its payload to the trigger, thereby passing the payload to the body of the HTTP trigger.
+
+###  Parse JSON
+In order to parse the JSON from Postman so the information could be used, next I added a Parse JSON action.  Here is the Schema that I used:
+
+{
+  "type": "object",
+  "properties": {
+    "userName": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "userEmail": {
+      "type": "string"
+    },
+    "userRoles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userGroups": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
+ 
+
+
 
 
 ###  HTTP Action (Get access token from Azure AD).
