@@ -10,7 +10,7 @@ Streamline and automate the process of onboarding a new employee into Entra ID a
   - Azure Email Service (part of Logic Apps connector)
   - Azure Resource Manager
   
-- **Steps**:
+  - **Steps**:
    1. **Entra ID Setup**:
         - Set up a new Entra ID instance (if not already present) using the Azure portal.
    
@@ -108,10 +108,22 @@ Fixing the code allowed me to progress and get back to the Forbidden error, whic
 
 After I resolved this, the next error was this:  userPrincipalName (UPN) you are trying to assign to the new user is not valid because it does not belong to a verified domain in your Azure Active Directory (AAD).
 
-
+###  Domain Name issues
+Another error I encountered lead me to realise that in order to create the user, they needed to be linked to my domain name.
 
 
 ## Outcomes
+
+Here I created a new user, using my Automatic Onboarder:
+
+
+
+
+Here are the details of the new user, which raises an issue as her groups don't seem to have been created:
+
+![image](https://github.com/user-attachments/assets/ffcf6a99-4b0c-400b-a7c5-ae0001ce5346)
+
+
 
 ##  Summary of Steps:
 ###  HTTP Trigger (User data from Postman).
