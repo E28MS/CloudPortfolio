@@ -44,6 +44,10 @@ Streamline and automate the process of onboarding a new employee into Entra ID a
 
 Throughout this excercise, as I gained more knowledge about Azure LogicApps and understood my project better through attempting to build the onboarder, I was more and more able to challenge the directions or solutions provided to me by ChatGPT.  For instance, every time there was a piece of information that needed to be added, ChatGPT recommended updating the final building block, my HTTP Action 1.  I realised that this is non-sensical as this would mean that every time I wanted to create a new user, I would need to go to this step and manually adjust the information.  Instead, I build my onboarder so that all the information could be added in Postman and from there on be made available and used throughout the LogicApp.  This realisation really boosted my confidence and pushed me to explore further.
 
+I learned that for each operation that involves creating or assigning something in Entra ID, I need to make a seperate Graph API call to Entra ID. 
+
+I learned that instead of creating seperate HTTP actions for the above, I could batch my requests into a single HTTP action.
+
 ###  Difficulties and Troubleshooting
 
 ##  Getting stuck on step 2:
