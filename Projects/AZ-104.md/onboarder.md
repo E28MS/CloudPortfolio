@@ -40,6 +40,10 @@ Streamline and automate the process of onboarding a new employee into Entra ID a
 
 [Workflow Expression Functions in Azure Logic Apps and Power Automate](https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference)
 
+###  Learning and Reflection
+
+Throughout this excercise, as I gained more knowledge about Azure LogicApps and understood my project better through attempting to build the onboarder, I was more and more able to challenge the directions or solutions provided to me by ChatGPT.  For instance, every time there was a piece of information that needed to be added, ChatGPT recommended updating the final building block, my HTTP Action 1.  I realised that this is non-sensical as this would mean that every time I wanted to create a new user, I would need to go to this step and manually adjust the information.  Instead, I build my onboarder so that all the information could be added in Postman and from there on be made available and used throughout the LogicApp.  This realisation really boosted my confidence and pushed me to explore further.
+
 ###  Difficulties and Troubleshooting
 
 ##  Getting stuck on step 2:
@@ -54,7 +58,7 @@ Steps I took to resolve this:
 Solutions:
 After scrutinizing my app from start to finish, I realised that I was using an HTTP action instead of an HTTP Trigger as the first building block of my logic app.  
 
-##  BedRequest Error:
+##  BadRequest Error:
 After adding the next HTTP Action (1), I get getting a BadRequest error.  This seemed to have something to do with the way I structured the user information I entered in Postman and how that then gets interpreted by by the LogicApp.  
 
 Here is the inputs from the HTTP 1 Action:
@@ -95,6 +99,16 @@ When I added the permsissions above, and included  Group.Create, I got the follo
 Which I resolved by Granting Admin Permissions:
 
 ![image](https://github.com/user-attachments/assets/d354d82f-0bd3-493e-be00-22b62d3c3432)
+
+Then I was back to the BadError message and I spent some time until I established the following:
+
+The issue you're encountering in the code is that the body part of your HTTP action is being treated as a string, and the dynamic expressions like @{triggerBody()...} are not being interpreted properly. These expressions should be outside of the quotation marks to allow Logic Apps to parse them.
+
+Fixing the code allowed me to progress and get back to the Forbidden error, which turned out be because I had granted my User.ReadWrite.All permission as Delegated instead of Application.  
+
+After I resolved this, the next error was this:  userPrincipalName (UPN) you are trying to assign to the new user is not valid because it does not belong to a verified domain in your Azure Active Directory (AAD).
+
+
 
 
 ## Outcomes
