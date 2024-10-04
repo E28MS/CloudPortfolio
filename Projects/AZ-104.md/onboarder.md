@@ -192,3 +192,8 @@ HTTP Action (Use Microsoft Graph API to create the user).
 ###  Here I set up the next HTTP action , using Microsoft Graph API to create the new user:
 
 ![image](https://github.com/user-attachments/assets/7fc528d5-b8c0-4a85-b419-5f7efd0948ec)
+
+
+In order to complete the above, I had to register my app in Graph Api to grant permissions to my app and also to get the Client ID and Secret that I will require later:
+
+![image](https://github.com/user-attachments/assets/7c43945b-e82c-406b-95c0-91b73240e666)
