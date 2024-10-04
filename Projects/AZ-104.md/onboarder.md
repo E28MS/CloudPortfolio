@@ -123,7 +123,14 @@ I resolved this by ensuring that their email account was linked to my domain nam
 
 In order to create the new user with their groups and roles incuded from the beginning, I built another LogicApp for a different user.  This allowed me to really understand the process, the errors and how everything fits together.  This went smoothly until the final HTTP action, where I got an Unauthorised error.  This seems to be linked to the token I got in Step 2, so I focussed my troubleshooting on how to resolve this. 
 
+##  Here I identified the problem:
+In my first HTTP action ("HTTP_1"), it's correctly fetching an OAuth token, but the second HTTP action that attempts to create the user doesn’t pass the actual token in the Authorization header.
 
+##  Fix:
+Capture the Access Token: After the first HTTP action (HTTP_1) that gets the token, I need to extract the access token from the response body and pass it to the second HTTP action.
+
+## Action:   
+I modified the Logic App to Pass the Token: Update the second HTTP action (where the user is created) to include the token in the Authorization header.
 
 ## Outcomes
 
