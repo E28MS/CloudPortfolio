@@ -116,6 +116,15 @@ After I resolved this, the next error was this:  userPrincipalName (UPN) you are
 Another error I encountered lead me to realise that in order to create the user, they needed to be linked to my domain name.
 
 
+Solutions:
+I resolved this by ensuring that their email account was linked to my domain name and this resolved the error.
+
+###  Unauthorised error
+
+In order to create the new user with their groups and roles incuded from the beginning, I built another LogicApp for a different user.  This allowed me to really understand the process, the errors and how everything fits together.  This went smoothly until the final HTTP action, where I got an Unauthorised error.  This seems to be linked to the token I got in Step 2, so I focussed my troubleshooting on how to resolve this. 
+
+
+
 ## Outcomes
 
 Here I created a new user, using my Automatic Onboarder:
