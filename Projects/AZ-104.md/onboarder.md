@@ -1,6 +1,6 @@
 ###  Project Outline
 
-## Onboard Automator (AZ-104 Module 1: Manage Azure identities and governance)
+## 1.  Onboard Automator (AZ-104 Module 1: Manage Azure identities and governance)
 Streamline and automate the process of onboarding a new employee into Entra ID and assigning necessary Azure resources.
 
 - **Programming required?**: ❌
