@@ -10,3 +10,8 @@ ChatGPT
 ### Netmaze Explorer
 
 [Learn Microsoft Virtual Networks](https://learn.microsoft.com/en-us/training/modules/integrate-vnets-with-vnet-peering/2-connect-services-using-vnet-peering)
+
+
+###  ShareSafely
+
+[Learn Microsoft Managed Identities](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview)
